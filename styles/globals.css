@@ -14,8 +14,8 @@
 @tailwind base;
 @layer base {
   :root {
-    --color-accent: #6d57ff;
-    --color-secondary: #8A79FF;
+    --color-accent: #045D5D;
+    --color-secondary: #04C4C4;
     --color-light: #f6f6f6;
     --color-dark: #000;
     --color-grey: #eee;
