@@ -53,22 +53,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/pinnie.png" />
       </Head>
-      <main className="w-full min-h-screen m-auto flex flex-col justify-center items-center px-2">
+      <main className="w-full min-h-screen m-auto flex flex-col justify-center items-center">
         <div className="w-full h-full m-auto bg-heroImage bg-cover bg-center flex flex-col justify-center items-center">
-          <div className="h-full max-w-screen-xl">
+          <div className="h-full max-w-screen-2xl">
             <div className="w-full m-auto mt-16 flex justify-start items-center">
-              <Image src="/logo.png" alt="Pinata logo" height={30} width={115} />
+              {/*<Image src="/logo.png" alt="Pinata logo" height={30} width={115} />*/}
             </div>
-            <div className="h-full w-full m-auto flex justify-center items-center gap-8">
-              <div className="w-1/2 flex flex-col gap-6">
-                <h1>Pinata + Next.js</h1>
-                <p>
-                  Update the <span className="py-1 px-2 rounded-md italic border-2 border-accent">.env.local</span> file to set your
-                  Pinata API key and (optionally) your IPFS gateway URL, restart the
-                  app, then click the Upload button and you'll see uploads to IPFS
-                  just work™️. If you've already uploaded files, click Load recent to
-                  see the most recently uploaded file.
-                </p>
+            <div className="h-full w-full m-auto flex justify-center items-center gap-5">
+              <div className="w-1/2 flex flex-col gap-3">
+                <h1>Pinata + IPFS Storage</h1>
                 <input
                   type="file"
                   id="file"
@@ -76,7 +69,7 @@ export default function Home() {
                   onChange={handleChange}
                   style={{ display: "none" }}
                 />
-                <div>
+                <div className="my-2">
                   <button onClick={loadRecent} className="mr-10 w-[150px] bg-light text-secondary border-2 border-secondary rounded-3xl py-2 px-4 hover:bg-secondary hover:text-light transition-all duration-300 ease-in-out">
                     Load recent
                   </button>
@@ -106,10 +99,9 @@ export default function Home() {
                   height="200"
                   width="200"
                 />
-                <h2 className="font-telegraf font-bold text-3xl">Read the docs</h2>
+                <h2 className="font-telegraf font-bold text-3xl">docs</h2>
                 <p className="w-2/3">
-                  SDKs, API reference, and recipes all designed to help you get
-                  started faster.
+                 
                 </p>
                 <a
                   className="bg-secondary text-light rounded-3xl pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
@@ -129,8 +121,7 @@ export default function Home() {
                 />
                 <h2 className="font-telegraf font-bold text-3xl">Pinata dashboard</h2>
                 <p className="w-2/3">
-                  Log into your Pinata dashboard to see all your files, configure an
-                  IPFS gateway, and more.
+                  
                 </p>
                 <a
                   className="bg-secondary text-light rounded-3xl pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
@@ -146,7 +137,7 @@ export default function Home() {
           </div>
           <div className="bg-accent w-full h-full">
             <div className="max-w-screen-xl mx-auto py-6 flex justify-between items-center text-light">
-              <p className="text-xs">Copyright © 2023 Pinata | All Rights Reserved </p>
+              <p className="text-xs">Copyright © 2023 Pinata</p>
               <div className="flex items-center gap-10 mr-4">
                 <a href="https://twitter.com/pinatacloud" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="#f6f6f6" className="h-6 w-6" viewBox="0 0 512 512">
