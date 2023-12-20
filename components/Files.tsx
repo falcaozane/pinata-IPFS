@@ -38,8 +38,8 @@ export default function Files(props) {
       >
         View file
       </a>
-      <p className="text-xs">{`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`}</p>
-      <p className="text-xs">{process.env.NEXT_PUBLIC_GATEWAY_TOKEN}</p>
+      <p className="text-xs my-2">{`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`}</p>
+      <p className="text-xs py-2">{process.env.NEXT_PUBLIC_GATEWAY_TOKEN}</p>
       <input
         className="px-4 py-3 w-full my-4 text-xl rounded-xl"
         type="text"
