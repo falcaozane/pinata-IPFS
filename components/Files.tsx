@@ -13,7 +13,7 @@ export default function Files(props) {
     const shortenUrl = async () => {
       try {
         const response = await axios.get(
-          `http://tinyurl.com/api-create.php?url=${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`
+          `https://tinyurl.com/api-create.php?url=${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`
         );
 
         setShortenedUrl(response.data);
