@@ -71,12 +71,12 @@ export default function Home() {
                 />
                 <div className="my-2">
                   <button onClick={loadRecent} className="mr-5 w-[150px] bg-light text-secondary border-2 border-secondary rounded-3xl py-2 px-4 hover:bg-secondary hover:text-light transition-all duration-300 ease-in-out">
-                    Load recent
+                    Load Recent
                   </button>
                   <button
                     disabled={uploading}
                     onClick={() => inputFile.current.click()}
-                    className="w-[150px] bg-secondary text-light rounded-3xl py-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out"
+                    className="w-[150px] bg-secondary text-light rounded-full py-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out"
                   >
                     {uploading ? "Uploading..." : "Upload"}
                   </button>
@@ -99,17 +99,17 @@ export default function Home() {
                   height="200"
                   width="200"
                 />
-                <h2 className="font-telegraf font-bold text-3xl">docs</h2>
+                <h2 className="font-telegraf font-bold text-3xl">Docs</h2>
                 <p className="w-2/3">
                  
                 </p>
                 <a
-                  className="bg-secondary text-light rounded-3xl pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
+                  className="bg-secondary text-light rounded-lg pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
                   href="https://docs.pinata.cloud"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Explore the docs
+                  Explore Docs
                 </a>
               </div>
               <div className="text-center bg-light rounded-lg w-full flex flex-col justify-center items-center p-2 gap-4 h-[475px]">
@@ -119,12 +119,12 @@ export default function Home() {
                   height="200"
                   width="200"
                 />
-                <h2 className="font-telegraf font-bold text-3xl">Pinata dashboard</h2>
+                <h2 className="font-telegraf font-bold text-lg">Pinata Dashboard</h2>
                 <p className="w-2/3">
                   
                 </p>
                 <a
-                  className="bg-secondary text-light rounded-3xl pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
+                  className="bg-secondary text-light rounded-lg pt-3 pb-2 px-4 hover:bg-accent hover:text-light transition-all duration-300 ease-in-out font-telegraf font-bold"
                   href="https://app.pinata.cloud"
                   rel="noopener noreferrer"
                   target="_blank"

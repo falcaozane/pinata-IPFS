@@ -28,25 +28,25 @@ export default function Files(props) {
 
   return (
     <div className="file-viewer">
-      <p>Your IPFS CID:</p>
-      <p>{props.cid}</p>
+      <p className="font-semibold text-sm">Your IPFS CID:</p>
+      <p className="text-gray-800">{props.cid}</p>
       <a
         href={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`}
         rel="noopener noreferrer"
         target="_blank"
-        className="border-b-2 border-solid border-accent bg-gradient-to-r from-green-600 to-lime-500 bg-clip-text text-transparent animate-animategradient hover:scale-110 transition-all duration-300 ease-in-out"
+        className="border-b-2 mb-20 border-solid border-accent  text-green-950 animate-animategradient hover:scale-110 transition-all duration-300 ease-in-out"
       >
         View file
       </a>
       <div className="grid py-3">
-          <label>Gateway and URL:</label>
-          <input className="py-2 my-2 px-1 rounded-xl" value={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`} />
-          <label>Token:</label>
-          <input className="py-2 my-2 px-1 rounded-xl" value={process.env.NEXT_PUBLIC_GATEWAY_TOKEN} />
+          <label className="font-semibold text-sm mt-6">Gateway and URL:</label>
+          <input className="my-2 px-4 py-3 rounded-lg " value={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`} />
+          <label className="text-sm font-semibold mt-4">Token:</label>
+          <input className="py-2 my-2 px-4 rounded-lg " value={process.env.NEXT_PUBLIC_GATEWAY_TOKEN} />
       </div>
-      <label>Shorten URL:</label>
+      <label className="font-semibold text-sm">Shorten URL:</label>
       <input
-        className="px-4 py-3 w-full my-4 text-xl rounded-xl"
+        className="px-4 py-3 w-full mb-8 text-lg rounded-lg "
         type="text"
         value={shortenedUrl}
         readOnly
