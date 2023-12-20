@@ -38,8 +38,13 @@ export default function Files(props) {
       >
         View file
       </a>
-      <p className="text-xs my-2">{`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`}</p>
-      <p className="text-xs py-2">{process.env.NEXT_PUBLIC_GATEWAY_TOKEN}</p>
+      <div className="grid py-3">
+          <label>Gateway and URL:</label>
+          <input className="py-2 my-2 px-1 rounded-xl" value={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`} />
+          <label>Token:</label>
+          <input className="py-2 my-2 px-1 rounded-xl" value={process.env.NEXT_PUBLIC_GATEWAY_TOKEN} />
+      </div>
+      <label>Shorten URL:</label>
       <input
         className="px-4 py-3 w-full my-4 text-xl rounded-xl"
         type="text"

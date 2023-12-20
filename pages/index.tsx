@@ -55,12 +55,12 @@ export default function Home() {
       </Head>
       <main className="w-full min-h-screen m-auto flex flex-col justify-center items-center">
         <div className="w-full h-full m-auto bg-heroImage bg-cover bg-center flex flex-col justify-center items-center">
-          <div className="h-full max-w-screen-2xl">
+          <div className="h-full w-full px-8">
             <div className="w-full m-auto mt-16 flex justify-start items-center">
               {/*<Image src="/logo.png" alt="Pinata logo" height={30} width={115} />*/}
             </div>
-            <div className="h-full w-full m-auto flex justify-center items-center gap-5">
-              <div className="w-1/2 flex flex-col gap-3">
+            <div className="h-full w-full flex justify-center items-center">
+              <div className="w-full flex flex-col gap-3">
                 <h1>Pinata + IPFS Storage</h1>
                 <input
                   type="file"
@@ -70,7 +70,7 @@ export default function Home() {
                   style={{ display: "none" }}
                 />
                 <div className="my-2">
-                  <button onClick={loadRecent} className="mr-10 w-[150px] bg-light text-secondary border-2 border-secondary rounded-3xl py-2 px-4 hover:bg-secondary hover:text-light transition-all duration-300 ease-in-out">
+                  <button onClick={loadRecent} className="mr-5 w-[150px] bg-light text-secondary border-2 border-secondary rounded-3xl py-2 px-4 hover:bg-secondary hover:text-light transition-all duration-300 ease-in-out">
                     Load recent
                   </button>
                   <button
@@ -85,8 +85,8 @@ export default function Home() {
                   <Files cid={cid} />
                 )}
               </div>
-              <div className="w-1/2 flex justify-center items-center h-full">
-                <Image height={500} width={500} src="/hero.png" alt="hero image of computer and code" />
+              <div className="w-full flex justify-center items-center h-full">
+                <Image height={400} width={400} src="/hero.png" alt="hero image of computer and code" />
               </div>
             </div>
           </div>
