@@ -28,8 +28,8 @@ export default function Files(props) {
 
   return (
     <div className="file-viewer">
-      {/*<p>Your IPFS CID:</p>
-      <p>{props.cid}</p>*/}
+      <p>Your IPFS CID:</p>
+      <p>{props.cid}</p>
       <a
         href={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`}
         rel="noopener noreferrer"
@@ -38,6 +38,8 @@ export default function Files(props) {
       >
         View file
       </a>
+      <p className="text-xs">{`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=`}</p>
+      <p className="text-xs">{process.env.NEXT_PUBLIC_GATEWAY_TOKEN}</p>
       <input
         className="px-4 py-3 w-full my-4 text-xl rounded-xl"
         type="text"

@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pinata Next.js App</title>
+        <title>IPFS Storage</title>
         <meta name="description" content="Generated with create-pinata-app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/pinnie.png" />
@@ -86,7 +86,7 @@ export default function Home() {
                 )}
               </div>
               <div className="w-1/2 flex justify-center items-center h-full">
-                <Image height={600} width={600} src="/hero.png" alt="hero image of computer and code" />
+                <Image height={500} width={500} src="/hero.png" alt="hero image of computer and code" />
               </div>
             </div>
           </div>
